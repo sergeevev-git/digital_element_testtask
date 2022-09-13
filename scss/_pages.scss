@@ -1,0 +1,21 @@
+/* PAGE--------------------- */
+.page {
+    flex: 0 0 1366px;
+}
+.promo__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 768px;
+    width: 100%;
+    background: linear-gradient(
+        0deg,
+        #98c3e8 8.84%,
+        rgba(152, 195, 232, 0) 31.12%
+    );
+    opacity: 0.2;
+}
+.page__promo {
+}
+.page__we-do {
+}

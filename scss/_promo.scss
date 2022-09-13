@@ -1,0 +1,54 @@
+/* PROMO--------------------- */
+.promo {
+    position: relative;
+    height: 768px;
+    width: 100%;
+    background: url("/img/main-block/illustration.svg") 84% 100px no-repeat;
+
+    .promo__container {
+        .promo__body {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 189px 0 0 0;
+
+            .promo__title {
+                font-family: "Galien";
+                font-size: 64px;
+                line-height: 74px;
+                letter-spacing: 0.04em;
+                color: #1f3f68;
+                max-width: 512px;
+            }
+            .promo__text {
+                font-size: 16px;
+                line-height: 26px;
+                letter-spacing: 0.05em;
+                color: #1f3f68;
+                opacity: 0.6;
+                margin: 32px 0 0 0;
+                max-width: 425px;
+            }
+            .promo__buttons {
+                background: #5a98d0;
+                box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
+                border-radius: 10px;
+                width: 220px;
+                height: 56px;
+                padding: 15px 45px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 71px 0 0 0;
+
+                .promo__button {
+                    font-size: 16px;
+                    line-height: 26px;
+                    text-align: center;
+                    letter-spacing: 0.04em;
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+}

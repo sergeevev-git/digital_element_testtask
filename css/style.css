@@ -1,0 +1,258 @@
+@font-face {
+  font-family: "Galien";
+  src: url("/fonts/Galien-Bold.ttf");
+  src: local("/fonts/Galien Bold"), local("/fonts/Galien-Bold"), url("/fonts/Galien-Bold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("/fonts/Gilroy-SemiBold.eot");
+  src: local("/fonts/Gilroy SemiBold"), local("/fonts/Gilroy-SemiBold"), url("/fonts/Gilroy-SemiBold.eot?#iefix") format("embedded-opentype"), url("/fonts/Gilroy-SemiBold.woff") format("woff"), url("/fonts/Gilroy-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("/fonts/Gilroy-Light.eot");
+  src: local("/fonts/Gilroy Light"), local("/fonts/Gilroy-Light"), url("/fonts/Gilroy-Light.eot?#iefix") format("embedded-opentype"), url("/fonts/Gilroy-Light.woff") format("woff"), url("/fonts/Gilroy-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("/fonts/Gilroy-Regular.eot");
+  src: local("/fonts/Gilroy Regular"), local("/fonts/Gilroy-Regular"), url("/fonts/Gilroy-Regular.eot?#iefix") format("embedded-opentype"), url("/fonts/Gilroy-Regular.woff") format("woff"), url("/fonts/Gilroy-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("/fonts/Gilroy-Medium.eot");
+  src: local("/fonts/Gilroy Medium"), local("/fonts/Gilroy-Medium"), url("/fonts/Gilroy-Medium.eot?#iefix") format("embedded-opentype"), url("/fonts/Gilroy-Medium.woff") format("woff"), url("/fonts/Gilroy-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("/fonts/Gilroy-Bold.eot");
+  src: local("/fonts/Gilroy Bold"), local("/fonts/Gilroy-Bold"), url("/fonts/Gilroy-Bold.eot?#iefix") format("embedded-opentype"), url("/fonts/Gilroy-Bold.woff") format("woff"), url("/fonts/Gilroy-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a,
+a:hover,
+a:visited {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+html,
+body {
+  font-family: "Gilroy", sans-serif;
+  width: 100%;
+  height: 100%;
+  line-height: 1;
+  font-size: 100%;
+  color: #1f3f68;
+  background-color: #fff;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* HEADER--------------------- */
+.header {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 40px;
+  z-index: 10;
+}
+.header .header__container {
+  max-width: 1200px;
+  padding: 0px 83px;
+  margin: 0 auto;
+  box-sizing: content-box;
+}
+.header .header__container .header__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* CONTAINER--------------------- */
+._container {
+  max-width: 939px;
+  padding: 0px 15px;
+  margin: 0 auto;
+  box-sizing: content-box;
+}
+
+/* PAGE--------------------- */
+.page {
+  flex: 0 0 1366px;
+}
+
+.promo__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 768px;
+  width: 100%;
+  background: linear-gradient(0deg, #98c3e8 8.84%, rgba(152, 195, 232, 0) 31.12%);
+  opacity: 0.2;
+}
+
+/* PROMO--------------------- */
+.promo {
+  position: relative;
+  height: 768px;
+  width: 100%;
+  background: url("/img/main-block/illustration.svg") 84% 100px no-repeat;
+}
+.promo .promo__container .promo__body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 189px 0 0 0;
+}
+.promo .promo__container .promo__body .promo__title {
+  font-family: "Galien";
+  font-size: 64px;
+  line-height: 74px;
+  letter-spacing: 0.04em;
+  color: #1f3f68;
+  max-width: 512px;
+}
+.promo .promo__container .promo__body .promo__text {
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.05em;
+  color: #1f3f68;
+  opacity: 0.6;
+  margin: 32px 0 0 0;
+  max-width: 425px;
+}
+.promo .promo__container .promo__body .promo__buttons {
+  background: #5a98d0;
+  box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
+  border-radius: 10px;
+  width: 220px;
+  height: 56px;
+  padding: 15px 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 71px 0 0 0;
+}
+.promo .promo__container .promo__body .promo__buttons .promo__button {
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+}
+
+/* WE-DO-PAGE--------------------- */
+.we-do .we-do__container {
+  padding: 180px 0 0 0;
+}
+.we-do .we-do__container .we-do__body {
+  display: flex;
+}
+.we-do .we-do__container .we-do__body .we-do__column {
+  flex: 1 0 50%;
+}
+.we-do .we-do__container .we-do__body .we-do__column .we-do__header {
+  font-size: 36px;
+  line-height: 46px;
+  letter-spacing: 0.05em;
+  color: #316099;
+  max-width: 360px;
+}
+.we-do .we-do__container .we-do__body .we-do__column .we-do__card {
+  padding: 0 48px 48px 48px;
+  background: #ffffff;
+  box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+  border-radius: 10px;
+}
+.we-do .we-do__container .we-do__body .we-do__column .we-do__card .card__content .card__title {
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+  color: #1f3f68;
+}
+.we-do .we-do__container .we-do__body .we-do__column .we-do__card .card__content .card__text {
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.05em;
+  color: #1f3f68;
+  opacity: 0.6;
+}
+.we-do .we-do__container .we-do__body .we-do__column .we-do__card .card__content .card__link {
+  font-size: 14px;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+  color: #5a98d0;
+}

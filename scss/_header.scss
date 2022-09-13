@@ -1,0 +1,28 @@
+/* HEADER--------------------- */
+
+.header {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 40px;
+    z-index: 10;
+    .header__container {
+        max-width: 1200px;
+        padding: 0px 83px;
+        margin: 0 auto;
+        box-sizing: content-box;
+        .header__menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .menu {
+            .menu__logo {
+                .header__logo {
+                }
+            }
+            .menu__burger {
+            }
+        }
+    }
+}
